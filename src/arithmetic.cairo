@@ -41,3 +41,5 @@ func power(base: felt, exp: felt) -> (res: felt) {
     }
     return (res);
 }
+
+// Modify divide and modulo functions to return -1 in case of division or modulo by zero.
