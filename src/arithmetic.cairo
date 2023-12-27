@@ -22,3 +22,7 @@ func multiply(a: felt, b: felt) -> (res: felt) {
     return (res=a*b);
 }
 
+func divide(a: felt, b: felt) -> (res: felt) {
+    assert b != 0, "Division by zero";
+    return (res=a/b);
+}
