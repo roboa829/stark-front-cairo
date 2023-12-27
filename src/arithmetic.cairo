@@ -31,3 +31,12 @@ func modulo(a: felt, b: felt) -> (res: felt) {
     assert b != 0, "Modulo by zero";
     return (res=a%b);
 }
+
+func power(base: felt, exp: felt) -> (res: felt) {
+    alloc_locals;
+    local res = 1;
+    for i in range(exp) {
+        res = res * base;
+    }
+    return (res);
+}
