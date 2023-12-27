@@ -26,3 +26,8 @@ func divide(a: felt, b: felt) -> (res: felt) {
     assert b != 0, "Division by zero";
     return (res=a/b);
 }
+
+func modulo(a: felt, b: felt) -> (res: felt) {
+    assert b != 0, "Modulo by zero";
+    return (res=a%b);
+}
