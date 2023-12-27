@@ -11,6 +11,7 @@ func subtract(a: felt, b: felt) -> (res: felt) {
 }
 
 func main{output_ptr: felt*}() {
+ // Call and serialize results of add, subtract, multiply, divide, modulo, and power
     let (add_result) = add(10, 5);
     serialize_word(add_result);
     let (subtract_result) = subtract(10, 5);
