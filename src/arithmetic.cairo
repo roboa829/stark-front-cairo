@@ -17,3 +17,8 @@ func main{output_ptr: felt*}() {
     serialize_word(subtract_result);
     return ();
 }
+
+func multiply(a: felt, b: felt) -> (res: felt) {
+    return (res=a*b);
+}
+
