@@ -42,4 +42,13 @@ func power(base: felt, exp: felt) -> (res: felt) {
     return (res);
 }
 
+func factorial(n: felt) -> (res: felt) {
+    alloc_locals;
+    local res = 1;
+    for i in range(1, n + 1) {
+        res = res * i;
+    }
+    return (res);
+}
+
 // Modify divide and modulo functions to return -1 in case of division or modulo by zero.
